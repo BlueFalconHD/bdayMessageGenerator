@@ -108,7 +108,7 @@ function setcustoms() {
     let btmimg = document.getElementById('text4')
     btmimg.src = customImage
     
-    let title = document.getElementsByName('title')
+    let title = document.getElementsByID('title')
     title.innerHTML = 'Happy Birthday ' + to + '!'
 }
 
