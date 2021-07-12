@@ -126,7 +126,7 @@ function generateLink() {
 
     // Main
 
-    let link = 'https://www.bluefalconhd.github.io/bdayMessageGenerator/index.html?to=' + eltv + '&frompre=' + elfpv + '&from=' + elfv + '&msg=' + elmv + '&img=' + eliv
+    let link = 'bluefalconhd.github.io/bdayMessageGenerator/index.html?to=' + eltv + '&frompre=' + elfpv + '&from=' + elfv + '&msg=' + elmv + '&img=' + eliv
 
     document.getElementById('link').innerHTML = link
 
