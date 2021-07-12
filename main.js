@@ -91,7 +91,6 @@ function gifTime() {
 
 function setcustoms() {
     let to = decodeURI(GetURLParameter('to'))
-    let frompre = decodeURI(GetURLParameter('frompre'))
     let from = decodeURI(GetURLParameter('from'))
     let message = decodeURI(GetURLParameter('msg'))
     let customImage = decodeURI(GetURLParameter('img'))
@@ -104,7 +103,7 @@ function setcustoms() {
     msge.innerHTML = message
 
     let frome = document.getElementById('text3')
-    frome.innerHTML = frompre + from
+    frome.innerHTML = from
 
     let btmimg = document.getElementById('text4')
     btmimg.src = customImage
@@ -113,20 +112,18 @@ function setcustoms() {
 
 function generateLink() {
     let elf = document.getElementById('from')
-    let elfp = document.getElementById('fromprefix')
     let elt = document.getElementById('to')
     let elm = document.getElementById('message')
     let eli = document.getElementById('imageurl')
 
     let elfv = elf.value
-    let elfpv = elfp.value
     let eltv = elt.value
     let elmv = elm.value
     let eliv = eli.value
 
     // Main
 
-    let link = 'bluefalconhd.github.io/bdayMessageGenerator/index.html?to=' + eltv + '&frompre=' + elfpv + '&from=' + elfv + '&msg=' + elmv + '&img=' + eliv
+    let link = 'bluefalconhd.github.io/bdayMessageGenerator/index.html?to=' + eltv + '&from=' + elfv + '&msg=' + elmv + '&img=' + eliv
 
     document.getElementById('link').innerHTML = link
 
