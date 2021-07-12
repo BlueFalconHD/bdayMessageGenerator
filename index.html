@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Happy Birthday</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        @font-face {
+            font-family: OrangeSlices;
+            src: url("OrangeSlices.otf") format("opentype");
+        }
+        
+        .centerAbsolute {
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="confetti"></canvas>
+    <script src="confetti.js"></script>
+    <script src="main.js"></script>
+    <p style="top: 200px; font-family: OrangeSlices; font-size: 30px; color: orangered; opacity: 0;" class="centerAbsolute" id="text">Happy Birthday Grandmommy!</p>
+    <button><img id="box" onclick="gifTime()" src="https://i.postimg.cc/5tMLQKcR/openingbox.png" alt="Opening Box" style="top: 270px; width: 100px; height: 100px;" class="centerAbsolute"></button>
+    <p style="top: 370px; font-family: sans-serif; font-size: 20px; color: orangered; opacity: 0;" class="centerAbsolute" id="text2">I made this website for you and I hope you love it!<br>I love you and I wish you a very happy birthday!</p>
+    <p style="top: 440px; font-family: OrangeSlices; font-size: 25px; color: orangered; opacity: 0;" class="centerAbsolute" id="text3">With love, from Hayes!</p>
+    <img src="https://media2.giphy.com/media/sTHrPHBu5TmphHbTHB/giphy.gif" style="top: 470px; opacity: 0;" class="centerAbsolute" id="text4">
+
+    <script>
+        setcustoms()
+    </script>
+</body>
+
+</html>
